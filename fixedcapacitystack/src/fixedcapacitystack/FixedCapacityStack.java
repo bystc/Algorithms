@@ -6,7 +6,7 @@ class fixedcapacity<T>{
 	public fixedcapacity(int cap){
 		a=(T[])new Object[cap];
 	}
-	public boolean IsEmpty(){
+	public boolean isEmpty(){
 		return N==0;
 	}
 	public int size(){
@@ -29,7 +29,7 @@ public class FixedCapacityStack {
 			String item=StdIn.readString();
 			if(item.equals("-"))
 				s.push(item);
-			else if(!s.IsEmpty()) 
+			else if(!s.isEmpty()) 
 				StdOut.print(s.pop()+" ");
 			
 		}
