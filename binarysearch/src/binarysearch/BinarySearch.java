@@ -56,6 +56,7 @@ public class BinarySearch<T extends Comparable<T>> {
 		b.put(4);
 		b.print();// 0 1 2 3 3 3 4 5
 		*/
+		
 		int [] whitelist=In.readInts(args[0]);
 		Arrays.sort(whitelist);
 		while(!StdIn.isEmpty()){
