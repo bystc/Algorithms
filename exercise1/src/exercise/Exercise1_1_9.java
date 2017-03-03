@@ -5,7 +5,7 @@ package exercise;
  * 
  * Integer.toBinaryString(N)
  */
-public class Exercise {
+public class Exercise1_1_9 {
 
 	public static void main(String[] args) {
 		String s="";
