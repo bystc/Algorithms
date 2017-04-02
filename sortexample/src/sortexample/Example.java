@@ -1,6 +1,7 @@
 package sortexample;
 
 import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Example {
@@ -39,7 +40,7 @@ public class Example {
 		return true;
 	}
 	public static void main(String[] args){
-		String[] a=In.readStrings();
+		String[] a=StdIn.readAllStrings();
 		sort(a);
 		assert isSorted(a);
 		show(a);
