@@ -3,11 +3,14 @@ package binarysearch;
 import java.lang.*;
 import java.util.*;
 
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
+
 
 public class BinarySearch<T extends Comparable<T>> {
 //
 //	private T a[];
-//	private int N;// 元素个数
+//	private int N;// 鍏冪礌涓暟
 //
 //	public BinarySearch(int N) {
 //		a = (T[]) new Comparable[N];
@@ -19,7 +22,7 @@ public class BinarySearch<T extends Comparable<T>> {
 //			int mid = lo + (hi - lo) / 2;
 //			int cmp = item.compareTo(a[mid]);
 //			if (cmp > 0)
-//				lo = mid + 1;//注意这里,最后一次比较后，lo等于比item小的最大元素的下标+1
+//				lo = mid + 1;//娉ㄦ剰杩欓噷,鏈�鍚庝竴娆℃瘮杈冨悗锛宭o绛変簬姣攊tem灏忕殑鏈�澶у厓绱犵殑涓嬫爣+1
 //			else if (cmp < 0)
 //				hi = mid - 1;
 //			else
@@ -29,9 +32,9 @@ public class BinarySearch<T extends Comparable<T>> {
 //	}
 //*/
 //	public void put(T item) {
-//		int i = rank(item);// 如果未命中，则i等于比item小的最大元素的index+1
+//		int i = rank(item);// 濡傛灉鏈懡涓紝鍒檌绛変簬姣攊tem灏忕殑鏈�澶у厓绱犵殑index+1
 //		for (int j = N; j > i; j--) {
-//			a[j] = a[j - 1];// 元素后移
+//			a[j] = a[j - 1];// 鍏冪礌鍚庣Щ
 //		}
 //		a[i] = item;
 //		N++;
